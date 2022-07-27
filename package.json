@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/helloukey/my-typewriter/issues"
   },
-  "homepage": "https://github.com/helloukey/my-typewriter#readme"
+  "homepage": "https://github.com/helloukey/my-typewriter#readme",
+  "dependencies": {
+    "my-typewriter": "^1.0.3"
+  }
 }
