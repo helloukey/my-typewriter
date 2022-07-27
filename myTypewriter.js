@@ -23,24 +23,21 @@ const typeWriter = ({
 
   const typing = () => {
     // Reset count after loop
-    if (count === texts.length) {
-      count = 0;
-    }
-
+    if (count === texts.length) { count = 0 }
+    // Grab current text from array
     currentText = texts[count];
-
+    // Start erasing when all letters completed
     if (containerText.length === currentText.length) {
       direction = false;
     }
+    // Start typing when letter length equals 1
     if (containerText.length === 1) {
       direction = true;
     }
 
     if (direction) {
       // typing speed if available
-      if (typeSpeed > 0) {
-        speed = typeSpeed;
-      }
+      if (typeSpeed > 0) { speed = typeSpeed }
       containerText = currentText.slice(0, index++);
       textContainer.textContent = containerText;
       textContainer.appendChild(blinkCursor);
@@ -52,13 +49,15 @@ const typeWriter = ({
         }
       }
     } else {
-      // erase speed if available
+      // Erase speed if available
       if (eraseSpeed > 0) {
+        // change speed to eraseSpeed
         speed = eraseSpeed;
       }
       containerText = currentText.slice(0, currentText.length - index++);
       textContainer.textContent = containerText;
       textContainer.appendChild(blinkCursor);
+      // Move to next word when completed
       if (containerText.length === 1) {
         count++;
         index = 0;
@@ -71,4 +70,4 @@ const typeWriter = ({
   typing();
 };
 
-export { typeWriter };
+module.exports = { typeWriter };

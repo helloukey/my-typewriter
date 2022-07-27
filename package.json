@@ -1,0 +1,29 @@
+{
+  "name": "my-typewriter",
+  "version": "1.0.0",
+  "description": "Lightweight typing effect library.",
+  "main": "myTypewriter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helloukey/my-typewriter.git"
+  },
+  "keywords": [
+    "my-typewriter",
+    "myTypewriter",
+    "typewriter js",
+    "js typewriter",
+    "typewriter javascript",
+    "typewriter effect",
+    "typewriter",
+    "js-typewriter"
+  ],
+  "author": "Kunal Ukey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helloukey/my-typewriter/issues"
+  },
+  "homepage": "https://github.com/helloukey/my-typewriter#readme"
+}
