@@ -70,4 +70,4 @@ const typeWriter = ({
   typing();
 };
 
-module.exports = { typeWriter };
+export { typeWriter }
