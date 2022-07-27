@@ -1,10 +1,10 @@
 {
   "name": "my-typewriter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Lightweight typing effect library.",
-  "main": "myTypewriter.js",
-  "type": "module",
+  "main": "./public/myTypewriter.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +28,13 @@
   },
   "homepage": "https://github.com/helloukey/my-typewriter#readme",
   "dependencies": {
-    "my-typewriter": "^1.0.3"
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "babel-loader": "^8.2.5",
+    "my-typewriter": "^1.0.3",
+    "webpack": "^5.74.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
   }
 }
