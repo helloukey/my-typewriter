@@ -1,6 +1,6 @@
 {
   "name": "my-typewriter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lightweight typing effect library.",
   "main": "myTypewriter.js",
   "type": "module",
