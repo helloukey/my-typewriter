@@ -68,6 +68,6 @@ const typeWriter = ({
   };
 
   typing();
-};
+}
 
 export { typeWriter }
