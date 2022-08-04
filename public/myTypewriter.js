@@ -1,15 +1,10 @@
-function $parcel$export(e, n, v, s) {
-  Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
-}
-
-$parcel$export(module.exports, "typeWriter", () => $8a255a193882a281$export$245947e8fe008c97);
-const $8a255a193882a281$var$textContainer = document.querySelector("#my-typewriter");
-let $8a255a193882a281$var$count = 0;
-let $8a255a193882a281$var$index = 0;
-let $8a255a193882a281$var$currentText = "";
-let $8a255a193882a281$var$containerText = "";
-let $8a255a193882a281$var$direction = true;
-const $8a255a193882a281$export$245947e8fe008c97 = ({ texts: texts , letterPause: letterPause = 1200 , typeSpeed: typeSpeed = 0 , eraseSpeed: eraseSpeed = 100 , blinkSpeed: blinkSpeed = 300 , speed: speed = 200 ,  })=>{
+const $b2bc79db8d6ef99e$var$textContainer = document.querySelector("#my-typewriter");
+let $b2bc79db8d6ef99e$var$count = 0;
+let $b2bc79db8d6ef99e$var$index = 0;
+let $b2bc79db8d6ef99e$var$currentText = "";
+let $b2bc79db8d6ef99e$var$containerText = "";
+let $b2bc79db8d6ef99e$var$direction = true;
+const $b2bc79db8d6ef99e$export$245947e8fe008c97 = ({ texts: texts , letterPause: letterPause = 1200 , typeSpeed: typeSpeed = 0 , eraseSpeed: eraseSpeed = 100 , blinkSpeed: blinkSpeed = 300 , speed: speed = 200 ,  })=>{
     // Blink Cursor
     const blinkCursor = document.createElement("span");
     blinkCursor.textContent = "|";
@@ -18,20 +13,20 @@ const $8a255a193882a281$export$245947e8fe008c97 = ({ texts: texts , letterPause:
     }, blinkSpeed);
     const typing = ()=>{
         // Reset count after loop
-        if ($8a255a193882a281$var$count === texts.length) $8a255a193882a281$var$count = 0;
+        if ($b2bc79db8d6ef99e$var$count === texts.length) $b2bc79db8d6ef99e$var$count = 0;
         // Grab current text from array
-        $8a255a193882a281$var$currentText = texts[$8a255a193882a281$var$count];
+        $b2bc79db8d6ef99e$var$currentText = texts[$b2bc79db8d6ef99e$var$count];
         // Start erasing when all letters completed
-        if ($8a255a193882a281$var$containerText.length === $8a255a193882a281$var$currentText.length) $8a255a193882a281$var$direction = false;
+        if ($b2bc79db8d6ef99e$var$containerText.length === $b2bc79db8d6ef99e$var$currentText.length) $b2bc79db8d6ef99e$var$direction = false;
         // Start typing when letter length equals 1
-        if ($8a255a193882a281$var$containerText.length === 1) $8a255a193882a281$var$direction = true;
-        if ($8a255a193882a281$var$direction) {
+        if ($b2bc79db8d6ef99e$var$containerText.length === 1) $b2bc79db8d6ef99e$var$direction = true;
+        if ($b2bc79db8d6ef99e$var$direction) {
             // typing speed if available
             if (typeSpeed > 0) speed = typeSpeed;
-            $8a255a193882a281$var$containerText = $8a255a193882a281$var$currentText.slice(0, $8a255a193882a281$var$index++);
-            $8a255a193882a281$var$textContainer.textContent = $8a255a193882a281$var$containerText;
-            $8a255a193882a281$var$textContainer.appendChild(blinkCursor);
-            if ($8a255a193882a281$var$containerText.length === $8a255a193882a281$var$currentText.length) // If letterPause if defined
+            $b2bc79db8d6ef99e$var$containerText = $b2bc79db8d6ef99e$var$currentText.slice(0, $b2bc79db8d6ef99e$var$index++);
+            $b2bc79db8d6ef99e$var$textContainer.textContent = $b2bc79db8d6ef99e$var$containerText;
+            $b2bc79db8d6ef99e$var$textContainer.appendChild(blinkCursor);
+            if ($b2bc79db8d6ef99e$var$containerText.length === $b2bc79db8d6ef99e$var$currentText.length) // If letterPause if defined
             {
                 if (letterPause > 0) // Pause at last letter
                 speed = letterPause;
@@ -40,14 +35,14 @@ const $8a255a193882a281$export$245947e8fe008c97 = ({ texts: texts , letterPause:
             // Erase speed if available
             if (eraseSpeed > 0) // change speed to eraseSpeed
             speed = eraseSpeed;
-            $8a255a193882a281$var$containerText = $8a255a193882a281$var$currentText.slice(0, $8a255a193882a281$var$currentText.length - $8a255a193882a281$var$index++);
-            $8a255a193882a281$var$textContainer.textContent = $8a255a193882a281$var$containerText;
-            $8a255a193882a281$var$textContainer.appendChild(blinkCursor);
+            $b2bc79db8d6ef99e$var$containerText = $b2bc79db8d6ef99e$var$currentText.slice(0, $b2bc79db8d6ef99e$var$currentText.length - $b2bc79db8d6ef99e$var$index++);
+            $b2bc79db8d6ef99e$var$textContainer.textContent = $b2bc79db8d6ef99e$var$containerText;
+            $b2bc79db8d6ef99e$var$textContainer.appendChild(blinkCursor);
             // Move to next word when completed
-            if ($8a255a193882a281$var$containerText.length === 1) {
-                $8a255a193882a281$var$count++;
-                $8a255a193882a281$var$index = 0;
-                $8a255a193882a281$var$direction = true;
+            if ($b2bc79db8d6ef99e$var$containerText.length === 1) {
+                $b2bc79db8d6ef99e$var$count++;
+                $b2bc79db8d6ef99e$var$index = 0;
+                $b2bc79db8d6ef99e$var$direction = true;
             }
         }
         setTimeout(typing, speed);
@@ -56,4 +51,5 @@ const $8a255a193882a281$export$245947e8fe008c97 = ({ texts: texts , letterPause:
 };
 
 
+export {$b2bc79db8d6ef99e$export$245947e8fe008c97 as typeWriter};
 //# sourceMappingURL=myTypewriter.js.map

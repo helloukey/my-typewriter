@@ -1,9 +1,11 @@
 {
   "name": "my-typewriter",
-  "version": "1.0.5",
-  "description": "Lightweight typing effect library.",
+  "version": "1.0.6",
+  "description": "Lightweight Typing Effect Library.",
   "source": "src/myTypewriter.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "main": "public/myTypewriter.js",
+  "type": "module",
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build"
@@ -29,6 +31,6 @@
   },
   "homepage": "https://github.com/helloukey/my-typewriter#readme",
   "devDependencies": {
-    "parcel": "^2.6.2"
+    "parcel": "^2.7.0"
   }
 }
