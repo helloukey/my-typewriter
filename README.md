@@ -2,10 +2,10 @@
 
 A Zero Dependency Super Lightweight Typewriter Effect JavaScript Library.
 
-![bundle size](https://img.shields.io/bundlephobia/minzip/my-typewriter?style=for-the-badge)
-![license](https://img.shields.io/github/license/helloukey/my-typewriter?style=for-the-badge)
-![npm release](https://img.shields.io/npm/v/my-typewriter?color=orange&style=for-the-badge)
-![zero dependency](https://img.shields.io/badge/dependencies-0-success?style=for-the-badge)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/my-typewriter?style=for-the-badge)](https://bundlephobia.com/package/my-typewriter)
+[![license](https://img.shields.io/github/license/helloukey/my-typewriter?style=for-the-badge)](LICENSE)
+[![npm release](https://img.shields.io/npm/v/my-typewriter?color=orange&style=for-the-badge)](https://www.npmjs.com/package/my-typewriter)
+[![zero dependency](https://img.shields.io/badge/dependencies-0-success?style=for-the-badge)](package.json)
 ## Features
 
 - Super Lightweight (Less than **1KB**) 🔥
